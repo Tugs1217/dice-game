@@ -1,0 +1,41 @@
+#main {
+    margin:0px;
+    padding : 0px;
+    display: flex;
+    
+}
+
+#main div {
+    
+    justify-content:space-between ;
+    margin: 40px;
+    margin-top: 50px;
+}
+
+.player-1 { 
+    height: 300px;
+    width: 300px;
+    background-color: brown;
+    padding-top:10px;
+}
+
+.dice-side { 
+    height: 200px;
+    padding-top:10px;
+    width: 200px;
+}
+
+
+.player-2 {
+    height: 300px;
+    width:300px;
+    padding-top:10px;
+    background-color: blue;
+}
+
+.button {
+    margin-left: 475px;
+}
+
+
+ 
