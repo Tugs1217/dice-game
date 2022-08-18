@@ -12,27 +12,36 @@ var roundScore = 0;
 // Shooni ali talaaraa buusniig hadgalah
 //Shoonii ali neg talaaraa buusniig hadgalah huwisagch heregtei 1-6  gesen утгыг энэ хувьсагчид санамсаргүйгээр үүсгэж өгнө.
 
-var  dice = Math.floor(Math.random() * 6) + 1;
+
 
 //  <div class="player-name" id="score-0" >43</div> 
 
-globalThis.document.querySelector("#score-0").textContent = dice;
+// globalThis.document.querySelector("#score-0").textContent = dice;
 
-document.querySelector("#score-1").innerHTML =  dice;
+// document.querySelector("#score-1").innerHTML =  dice;
 
-// document.querySelector(".dice").style.display = 'none'; 
+// document.querySelector(".dice").style.display = 'none'; // ynzan buriin
 
-console.log("Шоо: " + dice);    
+// document.getElementById("score-0").textContent = 0;
 
+document.querySelector(".button").addEventListener("click", function(){
+    var  diceNumber = Math.floor(Math.random() * 6) + 1;
 
-function hello(){
-     console.log("Сайн уу");
-}
+    document.querySelector(".dice").src = 'images/dice-' + diceNumber + ".png"; 
 
-function mendchileh(aaa) {
-    aaa(); 
-}
+    // alert("Шоо буулаа:" + diceNumber);
+});
 
-mendchileh(hello);
+// console.log("Шоо: " + diceNumber);    
+
+// function hello(){
+//      console.log("Сайн уу");
+// }
+
+// function mendchileh(aaa) {
+//     aaa(); 
+// }
+
+// mendchileh(hello);
 
 // callback process  
